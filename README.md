@@ -34,6 +34,8 @@ npm run watch
 ```
 ## react
 
+## redux
+
 ## next.js
 
 ## styled-jsx
