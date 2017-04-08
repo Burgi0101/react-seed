@@ -18,17 +18,15 @@ npm install
 ```
 npm start
 ```
-just go to ```localhost:3000``` in your browser and the app should be up and running.
+Just go to ```localhost:3000``` in your browser and the app should be up and running.
 
 ## testing
-to trigger your tests you can just run 
+To trigger your tests you can just run 
 ```
 npm run test
 ```
-there is also a watch task configured that will run all your tests when changes to
-any file in your source folder are applied.
-
-just open an additional terminal and run 
+There is also a watch task configured that will run all your tests when changes to
+any file in your source folder are applied.Just open an additional terminal and run 
 ```
 npm run watch
 ```
