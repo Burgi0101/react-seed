@@ -26,7 +26,9 @@ To trigger your tests you can just run
 npm run test
 ```
 There is also a watch task configured that will run all your tests when changes to
-any file in your source folder are applied.Just open an additional terminal and run 
+any file in your source folder are applied.
+
+Just open an additional terminal and run the following command.
 ```
 npm run watch
 ```
