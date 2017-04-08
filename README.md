@@ -39,5 +39,6 @@ npm run watch
 ## next.js
 
 ## styled-jsx
-
+This seed-project is configured to use styled-jsx with a theme file to keep up consistency
+for the styling in the whole app. 
 
