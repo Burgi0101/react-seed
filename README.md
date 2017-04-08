@@ -18,7 +18,7 @@ npm install
 ```
 npm start
 ```
-Just go to ```localhost:3000``` in your browser and the app should be up and running.
+Open up your browser and enter ```localhost:3000``` and you should see the app up and running.
 
 ## testing
 To trigger your tests you can just run 
