@@ -1,10 +1,8 @@
+import PropTypes from 'prop-types';
+
 import { colors, spacing } from '../../styles/theme';
 
 export default React => {
-
-    const {
-    string, shape, func
-  } = React.PropTypes;
 
     const hello = ({ subject = 'World', actions: { setMode } }) => {
         return (
@@ -21,6 +19,12 @@ export default React => {
             </p>
         );
     };
+
+    const {
+        string,     // string = PropTypes.string
+        shape,      // shape = PropTypes.shape
+        func        // func = PropTypes.func
+    } = PropTypes;
 
     // adding PropTypes
     hello.propTypes = {
