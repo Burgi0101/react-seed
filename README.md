@@ -33,10 +33,9 @@ Just open an additional terminal and run the following command.
 npm run watch
 ```
 ## react
-
-## redux
-
-## next.js
+In my react projects I like to use **pure component factories** instead of classes and I also
+inject React as a dependecy in all reusable components to share a single instance of React across
+the entire app.
 
 ## styled-jsx
 This seed-project is configured to use styled-jsx with a theme file to keep up consistency
