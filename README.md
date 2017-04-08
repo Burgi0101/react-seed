@@ -37,6 +37,10 @@ In my react projects I like to use **pure component factories** instead of class
 inject React as a dependecy in all reusable components to share a single instance of React across
 the entire app.
 
+## next.js
+For this seed I used next.js as it comes with HMR (Hot Module Reloading) and let's you start 
+to write code within minutes as it's so easy to set it up. 
+
 ## styled-jsx
 This seed-project is configured to use styled-jsx with a theme file to keep up consistency
 for the styling in the whole app. 
