@@ -4,7 +4,7 @@ import { hello } from '../../styles/themes/components';
 
 export const HelloComponent = React => {
 
-    const reactElement = ({ subject = 'World', actions: { setMode } }) => {
+    const createElement = ({ subject = 'World', actions: { setMode } }) => {
         return (
             <p onClick={() => setMode('edit')}>
                 Hello, {subject}!
@@ -21,12 +21,12 @@ export const HelloComponent = React => {
     } = PropTypes;
 
     // adding PropTypes
-    reactElement.propTypes = {
+    createElement.propTypes = {
         subject: string,
         actions: shape({
             setMode: func.isRequired
         })
     };
 
-    return reactElement;
+    return createElement;
 };
