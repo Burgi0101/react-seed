@@ -1,6 +1,6 @@
 import { createStore } from 'redux';
 
-import createHello from './components/hello/hello.component';
+import { HelloComponent } from './components/hello/hello.component';
 import hello from './store/reducers/hello/hello.reducer';
 
 // creating store from hello.reducer
@@ -13,7 +13,7 @@ store.subscribe(() => {
 });
 
 export default React => ({ content, ...props }) => {
-    const Hello = createHello(React);
+    const Hello = HelloComponent(React);
     const helloProps = {
         ...props,
         actions: {
@@ -22,9 +22,9 @@ export default React => ({ content, ...props }) => {
     };
 
     return (
-            <div className="content">
-                <Hello { ...helloProps } />
-                <p>{content}</p>
-            </div>
+        <div className="content">
+            <Hello { ...helloProps } />
+            <p>{content}</p>
+        </div>
     );
 };

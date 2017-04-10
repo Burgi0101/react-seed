@@ -1,21 +1,15 @@
 import PropTypes from 'prop-types';
 
-import { colors, spacing } from '../../styles/theme';
+import { hello } from '../../styles/themes/components';
 
-export default React => {
+export const HelloComponent = React => {
 
-    const hello = ({ subject = 'World', actions: { setMode } }) => {
+    const reactElement = ({ subject = 'World', actions: { setMode } }) => {
         return (
             <p onClick={() => setMode('edit')}>
                 Hello, {subject}!
 
-                <style jsx>{`
-                 p {
-                     padding: ${spacing.medium};
-                     background: ${colors.blue};
-                   }
-                 `}
-                </style>
+                <style jsx>{`p{${hello.styles}}`}</style>
             </p>
         );
     };
@@ -27,12 +21,12 @@ export default React => {
     } = PropTypes;
 
     // adding PropTypes
-    hello.propTypes = {
+    reactElement.propTypes = {
         subject: string,
         actions: shape({
             setMode: func.isRequired
         })
     };
 
-    return hello;
+    return reactElement;
 };
