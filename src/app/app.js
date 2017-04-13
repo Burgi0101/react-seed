@@ -1,30 +1,16 @@
-import { createStore } from 'redux';
+import { BoardComponent } from './components/board/board.component';
 
-import { HelloComponent } from './components/hello/hello.component';
-import hello from './store/reducers/hello/hello.reducer';
+export const AppComponent = React => {
 
-// creating store from hello.reducer
-const store = createStore(hello);
+    const Board = BoardComponent(React);
 
-const setMode = (mode) => store.dispatch({ type: 'SET_MODE', mode });
+    const createElement = ({}) => {
 
-store.subscribe(() => {
-    console.log(store.getState());
-});
-
-export default React => ({ content, ...props }) => {
-    const Hello = HelloComponent(React);
-    const helloProps = {
-        ...props,
-        actions: {
-            setMode
-        }
+        return (
+            <div className="content">
+                <Board />
+            </div>
+        );
     };
-
-    return (
-        <div className="content">
-            <Hello { ...helloProps } />
-            <p>{content}</p>
-        </div>
-    );
+    return createElement;
 };
